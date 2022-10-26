@@ -1,14 +1,14 @@
 <script type="text/javascript">
   {% if cart %}
     window.pn.cart = {};
-  	window.pn.cart = {{cart | json}}
+  	window.pn.cart = {{ cart | json }}
     window.pn.cart.items = [];
 
     {% for item in cart.items %}
-      var cart_item = {{item | json}};
+      var cart_item = {{ item | json }};
       cart_item["collection_ids"] = [];
       {% for c in item.product.collections %}
-        cart_item["collection_ids"].push({{c.id}})
+        cart_item["collection_ids"].push({{ c.id }})
         {% endfor %}
       window.pn.cart.items.push(cart_item);
     {% endfor %}

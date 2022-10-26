@@ -13,7 +13,7 @@ shop.enabled_currencies %} { "iso_code":"{{ currency.iso_code }}", "name":"{{
   item.variant_id
 }}, "product_id":{{ item.product_id }}, "key":"{{ item.key }}", "url":"{{
   item.url
-}}", "image":"{{ item | img_url: 'medium' }}", "quantity":{{ item.quantity }},
+}}", "image":"{{ item | image_url }}", "quantity":{{ item.quantity }},
 "price":{{ item.price }}, "properties":{ {% for property in item.properties %}
 "{{ property[0] }}": "{{ property[1] }}"{% unless forloop.last %},{% endunless
 %} {% endfor %} }, "original_price":{{ item.original_price }},
