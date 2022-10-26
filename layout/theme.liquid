@@ -27,6 +27,13 @@
       <meta name="description" content="{{ page_description | escape }}">
     {% endif %}
 
+    {%- liquid
+      assign test_variable = 'I am working!'
+        assign incorrect_indent_variable = 'Am I pretty?'
+
+    %}
+<h1>Test tag with incorrect indent</h1>
+<p >Test tag with in proper code</p>
     {% render 'meta-tags' %}
 
     <script src="{{ 'global.js' | asset_url }}" defer="defer"></script>
