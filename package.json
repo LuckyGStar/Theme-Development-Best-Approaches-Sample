@@ -1,0 +1,24 @@
+{
+  "name": "rk-kit",
+  "version": "1.0.0",
+  "description": "redkrypton development kit",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write '**/*.liquid'",
+    "test": "start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LuckyGStar/Theme-Development-Best-Approaches-Sample.git"
+  },
+  "author": "Andy Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LuckyGStar/Theme-Development-Best-Approaches-Sample/issues"
+  },
+  "homepage": "https://github.com/LuckyGStar/Theme-Development-Best-Approaches-Sample#readme",
+  "devDependencies": {
+    "@shopify/prettier-plugin-liquid": "^1.0.0-rc.0",
+    "prettier": "^2.8.0"
+  }
+}
