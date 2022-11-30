@@ -19,6 +19,9 @@
   "homepage": "https://github.com/LuckyGStar/Theme-Development-Best-Approaches-Sample#readme",
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.0.0-rc.0",
-    "prettier": "^2.8.0"
+    "prettier": "^2.8.0",
+    "stylelint": "^14.15.0",
+    "stylelint-config-prettier": "^9.0.4",
+    "stylelint-config-standard": "^29.0.0"
   }
 }
