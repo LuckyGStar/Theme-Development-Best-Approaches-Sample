@@ -4,7 +4,10 @@
   "description": "redkrypton development kit",
   "main": "index.js",
   "scripts": {
-    "format": "prettier --write '**/*.liquid'",
+    "format:liquid": "prettier --write '**/*.liquid'",
+    "format:css": "npx stylelint '**/*.css'",
+    "format:js": "npx eslint '**/*.js'",
+    "format": "npm run format:liquid & npm run format:css",
     "test": "start"
   },
   "repository": {
@@ -19,6 +22,7 @@
   "homepage": "https://github.com/LuckyGStar/Theme-Development-Best-Approaches-Sample#readme",
   "devDependencies": {
     "@shopify/prettier-plugin-liquid": "^1.0.0-rc.0",
+    "eslint": "^8.28.0",
     "prettier": "^2.8.0",
     "stylelint": "^14.15.0",
     "stylelint-config-prettier": "^9.0.4",
